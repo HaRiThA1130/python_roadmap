@@ -1,0 +1,257 @@
+# 🐍 Python Learning Journey
+
+This repository contains my structured learning progress in Python programming. It includes basic concepts, examples, and practice programs as I learn Python step-by-step.
+
+---
+
+# 📌 Day 1 – Python Basics
+
+---
+
+## ✅ 1. Introduction to Python
+
+Python is a high-level, beginner-friendly programming language.  
+It is widely used in:
+
+- Web Development
+- Artificial Intelligence
+- Data Science
+- Automation
+- Software Development
+- Cyber Security
+
+Python is easy to read and write because its syntax is similar to English.
+
+---
+
+## ✅ 2. Hello World Program
+
+The first program in any programming language is usually the Hello World program. It is used to understand how output works.
+
+### Example:
+```python
+print("Hello World")
+```
+
+### Explanation:
+- `print()` is a built-in function used to display output.
+- Text must be written inside quotes.
+
+---
+
+## ✅ 3. Variables
+
+Variables are used to store data values in a program.
+
+### Example:
+```python
+name = "Haritha"
+age = 21
+percentage = 92.5
+is_student = True
+```
+
+---
+
+### 📌 Data Types Learned
+
+#### 🔹 String
+- Stores text data
+```python
+name = "Python"
+```
+
+#### 🔹 Integer
+- Stores whole numbers
+```python
+age = 21
+```
+
+#### 🔹 Float
+- Stores decimal numbers
+```python
+marks = 92.5
+```
+
+#### 🔹 Boolean
+- Stores True or False values
+```python
+is_passed = True
+```
+
+---
+
+## ✅ 4. User Input
+
+Input allows users to enter values during program execution.
+
+### Example:
+```python
+name = input("Enter your name: ")
+print(name)
+```
+
+### Important Note:
+- `input()` always stores data as string.
+
+---
+
+## ✅ 5. Type Conversion
+
+Type conversion is used to change one data type into another.
+
+### Methods:
+
+#### Convert to Integer
+```python
+age = int(input("Enter age: "))
+```
+
+#### Convert to Float
+```python
+price = float(input("Enter price: "))
+```
+
+#### Convert to String
+```python
+num = str(10)
+```
+
+---
+
+## ✅ 6. Conditional Statements
+
+Conditional statements are used for decision making in programs.
+
+---
+
+### 🔹 If Statement
+```python
+age = 18
+
+if age >= 18:
+    print("Eligible")
+```
+
+---
+
+### 🔹 If-Else Statement
+```python
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+```
+
+---
+
+### 🔹 If-Elif-Else Statement
+```python
+marks = 85
+
+if marks >= 90:
+    print("A Grade")
+elif marks >= 70:
+    print("B Grade")
+else:
+    print("C Grade")
+```
+
+---
+
+## ✅ 7. While Loop
+
+A while loop is used to repeat a block of code while a condition is true.
+
+---
+
+### 🔹 Loop Structure
+1. Initialization
+2. Condition
+3. Updation
+
+---
+
+### Example:
+```python
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+```
+
+---
+
+### Output:
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+### Explanation:
+- `i = 1` → Starting value
+- `while i <= 5` → Condition
+- `i += 1` → Increases value each time
+
+---
+
+## ✅ 8. Important Concepts Learned
+
+- Python syntax basics
+- Proper indentation in Python
+- Use of colon `:` in loops and conditions
+- Avoiding infinite loops
+- Understanding execution flow of programs
+
+---
+
+# 🎯 Practice Programs Learned
+
+### ✔ Print Hello World
+### ✔ Store and Print Variables
+### ✔ Take User Input
+### ✔ Type Conversion Programs
+### ✔ Age Eligibility Program
+### ✔ Grade Calculator
+### ✔ Number Printing Using While Loop
+
+---
+
+# 📚 Learning Summary
+
+Today I learned the foundation concepts of Python including:
+
+- Output statements
+- Variables and Data Types
+- User Input Handling
+- Type Conversion
+- Conditional Statements
+- While Loop and Execution Flow
+
+---
+
+# 🚀 Future Learning Plan
+
+I will continue learning:
+
+- For Loops
+- Pattern Programs
+- Strings
+- Lists
+- Tuples
+- Dictionaries
+- Functions
+- Object-Oriented Programming
+- File Handling
+- Exception Handling
+- Python Libraries
+- Real Time Projects
+
+---
+
+⭐ This repository will be updated regularly as I continue my Python learning journey.
