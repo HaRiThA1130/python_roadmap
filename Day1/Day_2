@@ -1,0 +1,235 @@
+# Python Learning Notes – What I Learned Today
+
+Today I continued learning Python and focused mainly on understanding **for loops**, the **range() function**, and writing a program to generate a **multiplication table**. I tried to understand not just the code, but also how the program actually runs step by step.
+
+---
+
+## Understanding the For Loop
+
+A for loop in Python is used when we want to repeat something multiple times. Instead of writing the same line again and again, we can use a loop to run it automatically.
+
+Before learning loops, I realized that if I wanted to print numbers from 1 to 10 manually, I would have to write:
+
+```python
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+```
+
+This would take more time and is not efficient, especially when the numbers become larger. That is where the **for loop** becomes useful.
+
+The basic structure of a for loop is:
+
+```python
+for i in range(1, 6):
+    print(i)
+```
+
+Here is how I understood it:
+
+- `for` means we are starting a loop.
+- `i` is a variable that changes every time the loop runs.
+- `range(1, 6)` tells Python which numbers to use.
+- The loop starts from **1** and goes until **5** (because the ending value is not included).
+- `print(i)` prints the value each time the loop runs.
+
+So the loop runs like this internally:
+
+First run → i = 1  
+Second run → i = 2  
+Third run → i = 3  
+Fourth run → i = 4  
+Fifth run → i = 5  
+
+After that, the loop stops.
+
+Output becomes:
+
+```
+1
+2
+3
+4
+5
+```
+
+This helped me understand how Python repeats tasks automatically.
+
+---
+
+## Understanding the Range Function
+
+The `range()` function is very important when using loops. It basically generates numbers for the loop to use.
+
+I learned that range can work in different ways.
+
+### 1. Range with start and end
+
+```python
+range(1, 11)
+```
+
+This generates numbers from **1 to 10**.
+
+So the loop will run 10 times.
+
+---
+
+### 2. Range with only one number
+
+```python
+range(5)
+```
+
+This starts from **0** and goes up to **4**.
+
+Output will be:
+
+```
+0
+1
+2
+3
+4
+```
+
+I understood that Python starts counting from **0** by default.
+
+---
+
+### 3. Range with step value
+
+```python
+range(1, 11, 2)
+```
+
+This means the numbers increase by 2 each time.
+
+Output:
+
+```
+1
+3
+5
+7
+9
+```
+
+This helped me understand how loops can skip numbers or move faster through a sequence.
+
+---
+
+## Multiplication Table Program
+
+One of the main programs I learned today was generating a multiplication table using a loop.
+
+The code is:
+
+```python
+number = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    result = number * i
+    print(number, "x", i, "=", result)
+```
+
+At first, I carefully understood each line.
+
+---
+
+### Step 1: Taking Input from the User
+
+```python
+number = int(input("Enter a number: "))
+```
+
+Here, the program asks the user to enter a number.
+
+Example:
+
+```
+Enter a number: 5
+```
+
+The input is normally a string, but we used `int()` to convert it into a number.  
+Now the variable `number` stores the value **5**.
+
+---
+
+### Step 2: Starting the Loop
+
+```python
+for i in range(1, 11):
+```
+
+This line means the loop will run from **1 to 10**.
+
+Each time the loop runs, the value of `i` changes.
+
+So the loop runs like this:
+
+```
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+i = 10
+```
+
+This means the loop runs **10 times**.
+
+---
+
+### Step 3: Performing the Calculation
+
+```python
+result = number * i
+```
+
+Here the number entered by the user is multiplied by the loop value.
+
+If the user entered **5**, the program calculates:
+
+```
+5 × 1
+5 × 2
+5 × 3
+5 × 4
+5 × 5
+...
+```
+
+Each result is stored in the variable `result`.
+
+---
+
+### Step 4: Printing the Result
+
+```python
+print(number, "x", i, "=", result)
+```
+
+This line prints the multiplication table in a proper format.
+
+The output becomes:
+
+```
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+Overall, today’s learning improved my understanding of how Python programs actually run behind the scenes.
