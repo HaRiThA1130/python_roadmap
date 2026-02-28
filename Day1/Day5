@@ -1,0 +1,20 @@
+LCM OF 2 NUMBERS:::
+=========================
+a = int(input())
+b = int(input())
+
+# find gcd first
+x = a
+y = b
+
+while y != 0:
+    x, y = y, x % y
+
+gcd = x
+
+# LCM formula
+lcm = (a * b) // gcd
+
+print(lcm)
+=========================
+
